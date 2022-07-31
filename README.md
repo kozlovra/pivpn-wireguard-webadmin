@@ -12,7 +12,7 @@
  - Для выполнения команд PiVPN веб-сервером требуются права sudo без ввода пароля для пользователя www-data `echo "www-data ALL=(ALL) NOPASSWD:ALL" | tee -a /etc/sudoers`
  - Для возможности чтения конфигураций требуются права 755 для папки и 644 для самих конфигураций `chmod 755 /var/www/<you site folder>/configs` `chmod 644 /var/www/<you site folder>/configs/*.conf`
 
-## Автооризация
+## Авторизация
 
 Для авторизации используется Basic authentication Вашего веб-сервера. Для Apache2: Создание файла пользователей `sudo htpasswd -c /etc/apache2/.htpasswd <user name>`
 Включение авторизации в конфигурации:
